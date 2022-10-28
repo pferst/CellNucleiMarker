@@ -3,7 +3,13 @@ classdef roi
     %   Detailed explanation goes here
 
     properties
-        Property1
+        Name;
+        cellType;
+        xStart;
+        yStart;
+        width;
+        height;
+        color;
     end
 
     methods
