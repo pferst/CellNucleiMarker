@@ -3,6 +3,7 @@ classdef roi
     %   Detailed explanation goes here
 
     properties
+        id;
         Name;
         cellType;
         xStart;
@@ -13,10 +14,16 @@ classdef roi
     end
 
     methods
-        function obj = roi(inputArg1,inputArg2)
+        function obj = roi(id, cellType, xStart, yStart, w, h, color)
             %UNTITLED3 Construct an instance of this class
             %   Detailed explanation goes here
-            obj.Property1 = inputArg1 + inputArg2;
+            obj.id = id;
+            obj.cellType = cellType;
+            obj.xStart = xStart;
+            obj.yStart = yStart;
+            obj.width = w;
+            obj.height = h;
+            obj.color = color;
         end
 
         function outputArg = method1(obj,inputArg)
