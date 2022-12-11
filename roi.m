@@ -4,26 +4,25 @@ classdef roi
 
     properties
         id;
-        Name;
+        name;
         cellType;
         xStart;
         yStart;
         width;
         height;
-        color;
     end
 
     methods
-        function obj = roi(id, cellType, xStart, yStart, w, h, color)
+        function obj = roi(id, name, cellType, xStart, yStart, w, h)
             %UNTITLED3 Construct an instance of this class
             %   Detailed explanation goes here
             obj.id = id;
+            obj.name = name;
             obj.cellType = cellType;
             obj.xStart = xStart;
             obj.yStart = yStart;
             obj.width = w;
             obj.height = h;
-            obj.color = color;
         end
 
         function outputArg = method1(obj,inputArg)
