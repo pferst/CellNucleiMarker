@@ -10,10 +10,11 @@ classdef roi
         yStart;
         width;
         height;
+        objHandle;
     end
 
     methods
-        function obj = roi(id, name, cellType, xStart, yStart, w, h)
+        function obj = roi(id, name, cellType, xStart, yStart, w, h, handle)
             %UNTITLED3 Construct an instance of this class
             %   Detailed explanation goes here
             obj.id = id;
@@ -23,6 +24,7 @@ classdef roi
             obj.yStart = yStart;
             obj.width = w;
             obj.height = h;
+            obj.objHandle = handle;
         end
 
         function outputArg = method1(obj,inputArg)
