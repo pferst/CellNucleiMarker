@@ -53,6 +53,12 @@ bg = .215*total;
 fg = .99*total;
 low = find(ssum>bg, 1, 'first');
 high = find(ssum>fg, 1, 'first');
+if low >= high
+    if high == 0
+        high = 1;
+    end
+    low = 0;    
+end
 adjustedImage = imadjust(filterImage, [low/256 high/256],[0 1],1.8);
 
 
