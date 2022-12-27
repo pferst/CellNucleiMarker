@@ -26,11 +26,5 @@ classdef roi
             obj.height = h;
             obj.objHandle = handle;
         end
-
-        function outputArg = method1(obj,inputArg)
-            %METHOD1 Summary of this method goes here
-            %   Detailed explanation goes here
-            outputArg = obj.Property1 + inputArg;
-        end
     end
 end
